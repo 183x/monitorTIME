@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <link rel="shortcut icon" href="test.png">
+    <meta charset="utf-8">
+    <title>新モニター</title>
+    <meta name="description" content="多機能モニターの改良版です！">
+    <div style="text-align: center">
+        <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTvOSDWyUWzoTBWn0gO6ft_BKLKg2b6o1WDdYbKGoNIdvAXAI4wvMyxSOjQOSpDCpoes7Zg0O_zrMo5/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false" width="1100" height="740"></iframe>
+    </div>
+
+    <body>
+        <h2 style="text-align:center">
+            <font size="7">現在時刻<span id="real-time"></span></font>
+        </h2>
+
+        <script type="text/javascript">
+            function Time() {
+                var realTime = new Date();
+                var hour = realTime.getHours();
+                var minutes = realTime.getMinutes();
+                var seconds = realTime.getSeconds();
+                var text = hour + "時" + minutes + "分" + seconds + "秒";
+                document.getElementById("real-time").innerHTML = text;
+            }
+            setInterval('Time()', 1000);
+        </script>
+    </body>
+
+</head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="refresh" content="300; URL=https://time.1l5x.net/">
+    <title>Document</title>
+</head>
