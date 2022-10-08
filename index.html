@@ -12,7 +12,7 @@
 
     <body>
         <h2 style="text-align:center">
-            <font size="7">現在時刻<span id="real-time"></span></font>
+            <font size="7">現在時刻  <span id="real-time"></span></font>
         </h2>
 
         <script type="text/javascript">
@@ -21,7 +21,7 @@
                 var hour = realTime.getHours();
                 var minutes = realTime.getMinutes();
                 var seconds = realTime.getSeconds();
-                var text = hour + "時" + minutes + "分" + seconds + "秒";
+                var text = hour + ":" + minutes + ":" + seconds + "";
                 document.getElementById("real-time").innerHTML = text;
             }
             setInterval('Time()', 1000);
